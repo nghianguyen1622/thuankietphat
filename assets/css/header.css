@@ -20,36 +20,34 @@
 	margin: 0;
 }
 
-
-
-
-
 #top-menu {	
 	position: relative;
-	color: #fff;
+	color: #4b975c;
 	font-size: 14px;
+	width: 100% !important;
 }
-
-
 #top-menu .background {
-	background: #7ca745;
 	position: absolute;
 	left: 0; top: 0;
 	width: 100%; height: 100%;
 	overflow: hidden;
 }
-
 #top-menu .background img {
 	height: 100%;
-	width: auto;
+	width: 100%;
 }
-
-
-
 
 #top-menu .container {
 	margin-left: auto !important;
 	margin-right: auto !important;
+	width: 100% !important;
+}
+#top-menu .container .row{
+	display: flex;
+	width: 100% !important;
+}
+#top-menu .container .content-top{
+	display: inline-block;
 }
 
 
@@ -58,211 +56,45 @@
 	transition: all ease-in-out .3s;
 }
 
-
-
 #top-menu .container {
-	padding-top: 0;
-	padding-bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-#top-menu li {
+#top-menu .container .center-top h3 {
+	display: block;
+	position: relative;
+	font-weight: 700;
+}
+#top-menu h4 {
+	display: block;
+	position: relative;
+	font-weight: 400;
+}
+
+#top-menu .left-top{
 	display: block;
 	position: relative;
 }
-
-#top-menu li:last-child {
-	margin-right: 0;
-}
-
-
-
-#top-menu a {
-	display: block;	
-	padding: 10px 20px;		
-}
-
-#top-menu li:not(:last-child) {
-	margin-right: 1px;	
-}
-
-
-
-
-
-
-
-/*------ Left Nav ------*/
-
-
-#top-menu .left-nav .menu-item.active a, 
-#top-menu .left-nav .menu-item:hover a {
-	background: #fff;
-	opacity: 1;
-	color: #2A2E46;
-}
-
-
-
-
-
-
-
-/*------ Right Nav ------*/
-
-#top-menu .right-nav a .content {
-	display: flex;
-}
-
-#top-menu .right-nav a .content svg {
-	margin-right: 10px;
-}
-
-
-#top-menu .right-nav a .content svg, 
-#top-menu .right-nav a .content span {
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-
-
-#top-menu .right-nav {
-	-webkit-box-pack: end !important;
-    -ms-flex-pack: end !important;
-    justify-content: flex-end !important;
-}
-
-
-
-#top-menu .right-nav a {
-	display: flex;	
-}
-
-#top-menu .right-nav a * {
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-#top-menu .right-nav a svg {
-	margin-right: 10px;
-}
-
-/**********************************/
-
-
-
-#top-menu label {
+#top-menu .right-top{
 	display: block;
-	padding: 10px;	
+	position: relative;
 }
-
-#top-menu label span {
-	color: #F05438;
+#top-menu .right-top{
+	text-align: right;
+	margin-left: auto !important;
 }
-
-
-
-#top-menu .color-part, 
-#top-menu .solid-part {
-	fill: rgba(255,255,255,.5);
-	transition: all ease-in-out .3s;
+#top-menu .center-top{
+	text-align: center;
+	bottom: -17%;
+    position: relative;
 }
-
-#top-menu .menu-item a:hover .color-part, 
-#top-menu .menu-item a:hover .solid-part {
-	/*fill: #F05438;*/
-	fill: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-/*----- Menu Item Cart -----*/
-
-#main-header .menu-item.cart .total-amount {
-	margin-right: 10px;
-}
-
-#main-header .menu-item.cart .quantity {
-	background: #7ca745;
-	border-radius: 25px;
-	width: 20px;
-	height: 20px;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: 10px;
-	
-}
-
-#main-header .menu-item.cart .quantity span {
-	display: flex;
-	width: 100%; 
-	height: 100%;
-	justify-content: center;
-	align-items: center;	
-	font-size: 11px;
-	line-height: 1em;
-	color: #FFF;
-}
-
-
-
-
-
-
-/**********************************/
-
-
-#top-menu a {
-	display: flex;	
-}
-
-#top-menu a * {
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-#top-menu a .icon {
-	display: flex;
-	align-items: center;
-	margin-right: 10px;
-}
-
-
-#top-menu label {
-	display: block;
-	padding: 10px;	
-}
-
 
 @media all and (max-width: 991px) {
 	#top-menu {
 		display: none;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -317,6 +149,9 @@
 #main-menu .logo img {
 	width: auto;
 }
+#main-menu {
+	background-color: #8bcf35;
+}
 
 
 @media all and (max-width: 991px) {
@@ -365,8 +200,9 @@
 
 @media all and (min-width: 992px) {
 	#main-nav .main-menu {
-		justify-content: flex-end;
+		/* justify-content: flex-end; */
 		height: 100%;
+		padding: 20px 0;
 	}		
 }
 
@@ -382,11 +218,11 @@
 	}	
 	
 	#main-nav .sub-menu-item.active a {
-		color: #7ca745 !important;		
+		color: #fff !important;		
 	}		
 	
 	#main-nav .menu-item:after {
-		background: #7ca745;
+		background: #fff;
 		content: "";
 		position: absolute;
 		width: 0;
@@ -416,12 +252,15 @@
 }
 
 #main-nav .menu-item .level-1 {
-	color: #2A2E46;
+	color: #fff;
+	font-size: 14px;
+    text-transform: uppercase;
+	font-weight: 500;
 	transition: all ease-in-out .3s;
 }
 
 #main-nav .menu-item .level-1:hover {
-	color: #7ca745;
+	color: #fff;
 }
 
 
@@ -476,7 +315,7 @@
 		z-index: 999;
 		left: 0;
 		opacity: 1;
-		transform: translateY(-10px);
+		transform: translateY(-1px);
 	}	
 }
 

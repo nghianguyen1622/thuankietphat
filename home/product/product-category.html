@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="NGHIA">
+		<meta name="generator" content="NGHIA">
+		<title>Thuận Kiệt Phát | Sản phẩm </title>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">		
+		
+		<link href="../../assets/css/header.css" rel="stylesheet">
+		<link href="../../assets/css/footer.css" rel="stylesheet">
+		<link href="../../assets/css/style.css" rel="stylesheet">
+		<link href="../../assets/css/featured-slider.css" rel="stylesheet">
+		<link href="../../assets/css/modules.css" rel="stylesheet">
+		<link href="../../assets/css/layout.css" rel="stylesheet">	
+		
+		<!-- font awesome -->
+		<link href="../../assets/css/fontawesome/all.min.css" rel="stylesheet">
+		<script src="../../assets/js/fontawesome/all.min.js" rel="script"></script>
+		
+		<link href="../../assets/css/shopping-mall/product-category.css" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
+	</head>
+	
+	
+	
+	
+	
+	<body id="product-category">
+		
+		<!-- Main Header -->	
+		<header class="main-header" id="main-header">	
+			<div id="top-menu">	
+				<div class="background">
+				</div>
+				<div class="container row top-menu-wrapper">
+					<ul class="col-md-auto row left-nav">
+						<li class="col-auto menu-item active"><a href="../../home/index.html">Trang chủ</a></li>
+						<li class="col-auto menu-item"><a href="#">Quản lý</a></li>
+					</ul>
+					
+					<ul class="col-md row right-nav">
+						<li class="col-auto menu-item logout">
+							<a href="#">
+								<i class="fas fa-clock"></i>
+								<span>8h - 17h</span>
+							</a>
+						</li>
+						
+						<li class="col-auto menu-item user-profile">
+							<a href="#">
+								<i class="fas fa-phone"></i>
+								<span>0976617731</span>
+							</a>
+						</li>
+
+						<li class="col-auto menu-item user-profile">
+							<a href="#">
+								<i class="fas fa-envelope"></i>
+								<span>kietphat9@gmail.com</span>
+							</a>
+						</li>
+						
+					</ul>
+				</div>				
+			</div>
+			
+			<div id="main-menu">
+				<div class="container">
+					<div class="row containing-row">
+						
+						<div class="col-lg-auto col logo z-index" id="logo">
+							<a class="logo-pc" href="../../home/index.html"><img src="../../assets/img/logo-site.svg"></a>
+							<a class="logo-mobile" href="../../home/index.html"><img src="../../assets/img/w-logo.svg"></a>
+						</div>
+						<div id="search-product" class="col-auto">
+							<div class="wrapper row">
+								<div class="input-wrapper col">
+									<input id="search-key" name="key" type="text" placeholder="Tìm kiếm" value="">
+								</div>
+								<div class="btns col-auto btn-search">
+									<div class="w-btn">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" style="margin-top: 11%;">
+											<path d="M19.5 19.5L24 24M21.4286 13.7143C21.4286 17.9748 17.9748 21.4286 13.7143 21.4286C9.4538 21.4286 6 17.9748 6 13.7143C6 9.4538 9.4538 6 13.7143 6C17.9748 6 21.4286 9.4538 21.4286 13.7143Z" stroke="#2A2E46" stroke-width="1.6" stroke-linecap="round">
+											</path>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="main-nav" class="col">
+							<ul class="row main-menu">
+								<li class="menu-item col-auto">	
+									<a class="level-1" href="#">		
+										<span>Giới thiệu</span>	
+									</a>
+									<ul class="sub-menu">
+										<li class="sub-menu-item">	
+											<a class="level-2" href="#">Chúng tôi</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="#">Quy mô</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="#">Lịch sử hình thành</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="#">Kí kết nhà phân phối</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item col-auto">	
+									<a class="level-1" href="#">		
+										<span>Sản phẩm</span>	
+									</a>
+									<ul class="sub-menu">
+										<li class="sub-menu-item">	
+											<a class="level-2" href="../../home/product/product-category.html">Giấy nhám</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="../../home/product/product-category1.html">Keo 502</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="../../home/product/product-category2.html">Vải nhám</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="../../home/product/product-category3.html">Đế chà nhám</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item col-auto">	
+									<a class="level-1" href="../../home/company/certification.html">		
+										<span>Chứng nhận</span>	
+									</a>
+								</li>								
+								<li class="menu-item col-auto">	
+									<a class="level-1" href="../../home/company/connect.html">		
+										<span>Liên hệ</span>	
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+						
+						
+						
+						<div class="col-auto z-index menu-toggle" id="menu-toggle">
+							<div id="mobile-toggle">
+								<div class="cross_hamburger_menu"><div></div><div></div><div></div></div>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+			
+			<div id="mobile-menu" class="closed">				
+				<div class="mobile-menu-container">
+					<div id="mobile-top-menu">
+						<div class="container">
+							<div class="controls row">
+								<div id="mobile-toggle-off" class="btn-toggle-off col-auto">
+									<span>Đóng</span>
+								</div>
+							</div>						
+						</div>
+					</div>
+					<div id="mobile-main-menu">
+						<div class="container">
+							<ul class="nav row">
+								<li class="menu-item active">	
+									<div class="level-1 row">
+										<a href="../../home/index.html" class="col">		
+											<span>Trang chủ</span>	
+										</a>
+									</div>
+								</li>							
+								<li class="menu-item">
+									<div class="level-1 row">
+										<a href="#" class="col">		
+											<span>Giới thiệu</span>	
+										</a>
+										<div class="btn-open-sub col-auto">		
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none">			
+												<path d="M3 6L8 11L13 6" stroke="#2A2E46"></path>		
+											</svg>	
+										</div>
+									</div>
+									
+									<ul class="sub-menu row">
+										<li class="sub-menu-item">	
+											<a class="level-2" href="#">Chúng tôi</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="#">Quy mô</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="#">Lịch sử hình thành</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="#">Kí kết nhà phân phối</a>
+										</li>
+									</ul>
+								</li>
+								
+								<li class="menu-item">	
+									<div class="level-1 row">
+										<a href="#" class="col">		
+											<span>Sản phẩm</span>	
+										</a>
+										<div class="btn-open-sub col-auto">		
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none">			
+												<path d="M3 6L8 11L13 6" stroke="#2A2E46"></path>		
+											</svg>	
+										</div>
+									</div>
+									
+									
+									<ul class="sub-menu">
+										<li class="sub-menu-item">	
+											<a class="level-2" href="../../home/product/product-category.html">Giấy nhám</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="../../home/product/product-category1.html">Keo 502</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="../../home/product/product-category2.html">Vải nhám</a>
+										</li>
+										<li class="sub-menu-item">	
+											<a class="level-2" href="../../home/product/product-category3.html">Đế chà nhám</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<div class="level-1 row">
+										<a href="../../home/company/certification.html" class="col">
+											<span>Chứng nhận</span>
+										</a>
+									</div>
+								</li>
+								<li class="menu-item">
+									<div class="level-1 row">
+										<a href="../../home/company/connect.html" class="col">
+											<span>Liên hệ</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			
+		</header>
+		
+		<!-- End Header -->
+		
+		
+		
+		
+		
+		<!-- Main Content -->
+		<main>
+			
+			<section>
+				<div class="container main-container">
+					<div class="row">
+						<div class="main-sidebar col-lg-auto">
+							<div class="sidebar-heading">
+								<h2 class="h-small">Sản phẩm</h2>							
+							</div>
+							
+							<div class="nav">
+								<ul class="menu">
+									<li class="menu-item active">
+										<a href="../../home/product/product-category.html" class="level-1">Giấy nhám</a>
+									</li>
+									<li class="menu-item">
+										<a href="../../home/product/product-category1.html" class="level-1">Keo 502</a>
+									</li>
+									<li class="menu-item">
+										<a href="../../home/product/product-category2.html" class="level-1">Vải nhám</a>
+									</li>
+									<li class="menu-item">
+										<a href="../../home/product/product-category3.html" class="level-1">Đế chà nhám</a>
+									</li>
+								</ul>							
+							</div>
+						</div>	
+						
+						<div class="main-content col-lg">
+							<div class="main-heading row">
+								<h2 class="h-small col">
+									<span>Giấy nhám</span>
+								</h2>
+								
+								<div class="view-modes col-auto">
+									<div class="mode grid active">
+										<svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+											<path d="M0 0H6V6H0V0ZM9 0V6H15V0H9ZM0 15H6V9H0V15ZM9 15H15V9H9V15Z"/>
+										</svg>
+									</div>
+									<div class="mode list">
+										<svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+											<path d="M15 0V3H5V0H15ZM0 3H3V0H0V3ZM5 15H15V12H5V15ZM0 15H3V12H0V15ZM5 9H15V6H5V9ZM0 9H3V6H0V9Z"/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="main-body">
+								<ul class="products-wrapper grid-wrapper row">									
+									
+									<li class="product">									
+										<div class="hover-layer">
+											<div class="content">
+												<a href="../../home/product/single-product.html" class="name w-btn btn-read-more">
+													<span class="h-small">Nhám Mút SIA 7983</span>
+													<div class="icon">
+														<img src="../../assets/img/icons/icons8-detail-30.png">
+													</div>
+													
+												</a>
+												<p class="short-dscr">Thích hợp chà nhám các vật liệu với mọi hình dạng khác nhau
+													Sản phẩm nhám mút SIA 7983 SIAsponge flex là một sự lựa chọn hoàn hảo cho công việc chà nhám các lật liệu với những hình thù khác nhau như: các đường cong, đường viền hoặc vật liệu có cấu hình, hình khối... Ngoài ra, sản phẩm có lớp lót nền bằng xốp được thiết kế mềm hơn đảm bảo độ phù hợp tối đa cho mọi hình dáng vật liệu.</p>
+												
+												<div class="price">
+													<div class="member">
+														<span class="value">3xxx</span>  
+														<span class="currency">đ</span>
+													</div>		
+												</div>
+											</div>							
+										</div>
+										
+										<div class="content-layer"> 
+											<a href="../../home/product/single-product.html" class="featured-wrapper">			
+												<div class="img-wrapper">			
+													<img src="https://dungtienvn.com/upload/images/sanpham/danh_muc_san_pham/465x465_2_nham-mut.jpg">			
+												</div>
+											</a>									
+											
+											<div class="product-content">
+												<a href="../../home/product/single-product.html" class="name w-btn btn-read-more">
+													<span class="h-small">Nhám Mút SIA 7983</span>
+													<div class="icon">
+														<svg width="18" height="10" viewBox="0 0 18 10" fill="none">
+															<path d="M12.5379 0L11.669 0.853659L15.5172 4.39024H0.62069C0.248276 4.39024 0 4.63414 0 5C0 5.36585 0.248276 5.60975 0.62069 5.60975H15.5172L11.669 9.14634L12.5379 10L18 5L12.5379 0Z"/>
+														</svg>
+													</div>
+													<div class="tags">
+														<div class="tag">mới</div>
+													</div>
+												</a>
+												
+												
+												
+												<div class="price">		
+													<div class="type member">
+														<span class="value">3xxx</span>  
+														<span class="currency">đ</span>
+													</div>	
+												</div>
+											</div>
+											
+											
+										</div>
+									</li>
+									<li class="product">									
+										<div class="hover-layer">
+											<div class="content">
+												<a href="../../home/product/single-product.html" class="name w-btn btn-read-more">
+													<span class="h-small">Giấy nhám tờ RMC CP38</span>
+													<div class="icon">
+														<img src="../../assets/img/icons/icons8-detail-30.png">
+													</div>
+													
+												</a>
+												<p class="short-dscr">Giấy nhám nước RMC CP38 được sử dụng đánh bóng bề mặt sản phẩm trong các ngành công nghiệp ô tô, khuôn mẫu, cơ khí, đồng, thau, nhôm, gỗ...</p>
+												
+												<div class="price">
+													<div class="member">
+														<span class="value">Liên hệ</span>  
+														<span class="currency"></span>
+													</div>		
+												</div>
+											</div>							
+										</div>
+										
+										<div class="content-layer"> 
+											<a href="../../home/product/single-product.html" class="featured-wrapper">			
+												<div class="img-wrapper">			
+													<img src="https://dungtienvn.com/upload/images/sanpham/giay_nham_to/465x465_2_giay-nha-to-cp38-1.jpg">			
+												</div>
+											</a>									
+											
+											<div class="product-content">
+												<a href="../../home/product/single-product.html" class="name w-btn btn-read-more">
+													<span class="h-small">Giấy nhám tờ RMC CP38</span>
+													<div class="icon">
+														<svg width="18" height="10" viewBox="0 0 18 10" fill="none">
+															<path d="M12.5379 0L11.669 0.853659L15.5172 4.39024H0.62069C0.248276 4.39024 0 4.63414 0 5C0 5.36585 0.248276 5.60975 0.62069 5.60975H15.5172L11.669 9.14634L12.5379 10L18 5L12.5379 0Z"/>
+														</svg>
+													</div>
+													<div class="tags">
+														<div class="tag">mới</div>
+													</div>
+												</a>
+												
+												
+												
+												<div class="price">		
+													<div class="type member">
+														<span class="value">Liên hệ</span>  
+														<span class="currency"></span>
+													</div>	
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="product">									
+										<div class="hover-layer">
+											<div class="content">
+												<a href="../../home/product/single-product.html" class="name w-btn btn-read-more">
+													<span class="h-small">Nhám Dĩa Tròn 8M8 Chuyên chà tường, sơn nước (Made in China)</span>
+													<div class="icon">
+														<img src="../../assets/img/icons/icons8-detail-30.png">
+													</div>
+													
+												</a>
+												<p class="short-dscr">Giấy nhám 8M8  được sản xuất chuyên chà tường, bột chét và sơn nước</p>
+												
+												<div class="price">
+													<div class="member">
+														<span class="value">Liên hệ</span>  
+														<span class="currency"></span>
+													</div>		
+												</div>
+											</div>							
+										</div>
+										
+										<div class="content-layer"> 
+											<a href="../../home/product/single-product.html" class="featured-wrapper">			
+												<div class="img-wrapper">			
+													<img src="https://dungtienvn.com/upload/images/sanpham/giay_nham_dia/600x600_2_8m8-1.jpg">			
+												</div>
+											</a>									
+											
+											<div class="product-content">
+												<a href="../../home/product/single-product.html" class="name w-btn btn-read-more">
+													<span class="h-small">Nhám Dĩa Tròn 8M8 Chuyên chà tường, sơn nước (Made in China)</span>
+													<div class="icon">
+														<svg width="18" height="10" viewBox="0 0 18 10" fill="none">
+															<path d="M12.5379 0L11.669 0.853659L15.5172 4.39024H0.62069C0.248276 4.39024 0 4.63414 0 5C0 5.36585 0.248276 5.60975 0.62069 5.60975H15.5172L11.669 9.14634L12.5379 10L18 5L12.5379 0Z"/>
+														</svg>
+													</div>
+													<div class="tags">
+														<div class="tag">mới</div>
+													</div>
+												</a>
+												
+												
+												
+												<div class="price">		
+													<div class="type member">
+														<span class="value">Liên hệ</span>  
+														<span class="currency"></span>
+													</div>	
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="product">									
+										<div class="hover-layer">
+											<div class="content">
+												<a href="../../home/product/single-product.html" class="name w-btn btn-read-more">
+													<span class="h-small">Giấy Nhám Thùng PACO E64BT MSC (Made in Korea)</span>
+													<div class="icon">
+														<img src="../../assets/img/icons/icons8-detail-30.png">
+													</div>
+													
+												</a>
+												<p class="short-dscr">Giấy nhám chà khô, giấy dầy chuyên dùng làm nhám thùng, nhám vòng, nhám băng sử dụng cho: Gỗ, Plywood, bề mặt sơn PU , Da, Nhựa ....</p>
+												
+												<div class="price">
+													<div class="member">
+														<span class="value">Liên hệ</span>  
+														<span class="currency"></span>
+													</div>		
+												</div>
+											</div>							
+										</div>
+										
+										<div class="content-layer"> 
+											<a href="../../home/product/single-product.html" class="featured-wrapper">			
+												<div class="img-wrapper">			
+													<img src="https://dungtienvn.com/upload/images/600x600_2_E64BT_45.jpg">			
+												</div>
+											</a>									
+											
+											<div class="product-content">
+												<a href="../../home/product/single-product.html" class="name w-btn btn-read-more">
+													<span class="h-small">Giấy Nhám Thùng PACO E64BT MSC (Made in Korea)</span>
+													<div class="icon">
+														<svg width="18" height="10" viewBox="0 0 18 10" fill="none">
+															<path d="M12.5379 0L11.669 0.853659L15.5172 4.39024H0.62069C0.248276 4.39024 0 4.63414 0 5C0 5.36585 0.248276 5.60975 0.62069 5.60975H15.5172L11.669 9.14634L12.5379 10L18 5L12.5379 0Z"/>
+														</svg>
+													</div>
+													<div class="tags">
+														<div class="tag">mới</div>
+													</div>
+												</a>
+												
+												
+												
+												<div class="price">		
+													<div class="type member">
+														<span class="value">Liên hệ</span>  
+														<span class="currency"></span>
+													</div>	
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									
+								</ul>
+								<div class="pagination row">							
+									<div class="col-auto row paging">
+										<div id="prev" class="col-auto nav-btn">
+											<svg width="34" height="34" viewBox="0 0 34 34">
+												<path class="shape" d="M21.5 11V23L13 17L21.5 11ZM12 11H13V23H12V11Z"></path>
+											</svg>
+										</div>
+										<div class="numbers col-auto row">
+											<div class="number col-auto active"><span class="active">1</span></div>
+											<div class="number col-auto"><span>2</span></div>
+											<div class="number col-auto"><span>3</span></div>
+											<div class="number col-auto"><span>4</span></div>
+											<div class="number col-auto"><span>5</span></div>
+										</div>
+										
+										<div id="next" class="col-auto nav-btn">
+											<svg width="34" height="34" viewBox="0 0 34 34">
+												<path class="shape" d="M12 11V23L20.5 17L12 11ZM20.5 11H21.5V23H20.5V11Z"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					
+				</div>
+			</section>
+			
+			
+		</main>
+		
+		
+		
+		
+		<!------------- Footer ------------->
+		
+		<footer id="main-footer">
+			
+			<div id="footer-body">
+				<div class="container">
+					<div class="row contain-row">
+					
+						<!-- Col 1 | Company Info -->
+						<div class="col-auto column footer-col-1">
+							<div class="logo">
+								<img src="../../assets/img/logo-site.svg">
+							</div>
+							<a href="#" class="h-medium hotline">02879797979</a>
+							<p class="working-time">Hoạt động: 8h - 17h</br>
+							Hỗ trợ online: 24/7
+							</p>
+							<div class="row linked-sites">
+								<a href="#" class="col-auto"><img src="https://theme.hstatic.net/200000033050/1000938070/14/thongbao_compact.png?v=419"></a>
+							</div>							
+						</div>
+						
+						
+						<!-- Col 2 | Company Info -->
+						<div class="col-auto col-sm col-md-auto column footer-col-2">
+							<h4 class="title h-small">Thông tin doanh nghiệp</h4>
+							<ul>
+								<li>
+									<span>Mã số thuế:</span>
+									<span>3702786686</span>
+								</li>
+								<li>
+									<span>Cấp ngày:</span>
+									<span>18/8/2000 Tại: Phòng đăng kí kinh doanh Bình Dương</span>
+								</li>
+								<li>
+									<span>Địa chỉ:</span>
+									<span>số 14,Tổ 10,Khu Phố Hóa Nhựt  ,Phường Tân Vĩnh Hiệp,Thị Xã Tân Uyên, Bình Dương</span>
+								</li>
+								<li>
+									<span>Hotline:</span>
+									<span>0976617731</span>
+								</li>
+								<li>
+									<span>E-Mail:</span>
+									<span>kietphat9@gmail.com</span>
+								</li>
+								<li>
+									<span>Khiếu nại:</span>
+									<span>02855566679</span>
+								</li>
+							</ul>
+						</div>
+						
+						
+						<!-- Col 3 | Company Info -->						
+						<div class="col-auto column footer-col-3 ">
+							<h4 class="title h-small">Chính sách và bảo mật</h4>
+							<ul>
+								<li><a href="#">Chính sách bảo hành</a></li>
+								<li><a href="#">Chính sách đổi trả</a></li>
+								<li><a href="#">Chính sách bảo mật</a></li>
+								
+							</ul>
+						</div>
+						
+						
+						<!-- Col 4 | Company Info -->
+						<div class="col-auto column footer-col-4">
+							<h4 class="title h-small">Tư vấn viên</h4>
+							<ul>
+								<li>
+									<span>Cẩm Vân:</span>
+									<span>098789785</span>
+								</li>
+								<li>
+									<span>Hoàng Đạt:</span>
+									<span>038789755</span>
+								</li>
+								<li>
+									<span>Hồng Nhung:</span>
+									<span>098766666</span>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div id="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md copyright">
+							<span>© Copyright 2023 by thuankietphat company.</span>
+						</div>
+						<div class="col-md-auto socials">
+							<ul class="row">
+								
+								<li class="col-auto youtube">
+									<a href="#">
+										<svg viewBox="0 0 24 24" fill="none">
+											<path class="path" d="M18.8465 4H16.4359H7.77966H5.25949C2.4106 4 0 6.18182 0 8.8V11.6364V14.4727C0 17.0909 2.4106 19.2727 5.25949 19.2727H7.67008H16.3263H18.7369C21.6954 19.2727 23.9964 17.0909 23.9964 14.4727V11.6364V8.8C24.106 6.18182 21.6954 4 18.8465 4ZM16.1072 12.1818L10.0807 14.9091C9.86154 15.0182 9.09453 14.9091 9.09453 14.5818V8.90909C9.09453 8.69091 9.86154 8.47273 10.1903 8.58182L15.9976 11.5273C16.1072 11.7455 16.4359 12.0727 16.1072 12.1818Z"/>
+										</svg>
+
+									</a>
+								</li>
+								
+								<li class="col-auto insta">
+									<a href="#">
+										<svg viewBox="0 0 24 24" fill="none">
+											<path d="M18.4444 6.77778C18.4444 7.44444 17.8889 8 17.2222 8C16.5556 8 16 7.44444 16 6.77778C16 6.11111 16.5556 5.55556 17.2222 5.55556C17.8889 5.55556 18.4444 6.11111 18.4444 6.77778ZM17 12C17 14.6667 14.7778 16.8889 12.1111 16.8889C9.44445 16.8889 7.22222 14.6667 7.22222 12C7.22222 9.33333 9.44445 7.11111 12.1111 7.11111C14.7778 7.11111 17 9.33333 17 12ZM15.2222 12C15.2222 10.2222 13.7778 8.88889 12.1111 8.88889C10.3333 8.88889 9 10.3333 9 12C9 13.7778 10.4444 15.1111 12.1111 15.1111C13.7778 15.1111 15.2222 13.7778 15.2222 12ZM22 8V16C22 19.3333 19.3333 22 16 22H8C4.66667 22 2 19.3333 2 16V8C2 4.66667 4.66667 2 8 2H16C19.3333 2 22 4.66667 22 8ZM20.1111 8C20.1111 5.77778 18.2222 3.88889 16 3.88889H8C5.77778 3.88889 3.88889 5.77778 3.88889 8V16C3.88889 18.2222 5.77778 20.1111 8 20.1111H16C18.2222 20.1111 20.1111 18.2222 20.1111 16V8Z" fill="url(#paint0_linear_293_1515)"/>
+											
+											<path class="path" d="M18.4444 6.77778C18.4444 7.44444 17.8889 8 17.2222 8C16.5556 8 16 7.44444 16 6.77778C16 6.11111 16.5556 5.55556 17.2222 5.55556C17.8889 5.55556 18.4444 6.11111 18.4444 6.77778ZM17 12C17 14.6667 14.7778 16.8889 12.1111 16.8889C9.44445 16.8889 7.22222 14.6667 7.22222 12C7.22222 9.33333 9.44445 7.11111 12.1111 7.11111C14.7778 7.11111 17 9.33333 17 12ZM15.2222 12C15.2222 10.2222 13.7778 8.88889 12.1111 8.88889C10.3333 8.88889 9 10.3333 9 12C9 13.7778 10.4444 15.1111 12.1111 15.1111C13.7778 15.1111 15.2222 13.7778 15.2222 12ZM22 8V16C22 19.3333 19.3333 22 16 22H8C4.66667 22 2 19.3333 2 16V8C2 4.66667 4.66667 2 8 2H16C19.3333 2 22 4.66667 22 8ZM20.1111 8C20.1111 5.77778 18.2222 3.88889 16 3.88889H8C5.77778 3.88889 3.88889 5.77778 3.88889 8V16C3.88889 18.2222 5.77778 20.1111 8 20.1111H16C18.2222 20.1111 20.1111 18.2222 20.1111 16V8Z"/>
+											
+											<defs>
+												<linearGradient id="paint0_linear_293_1515" x1="24.0628" y1="-0.0545551" x2="-6.50989" y2="30.5107" gradientUnits="userSpaceOnUse">
+													<stop offset="0.0011048" stop-color="#FBE18A"/>
+													<stop offset="0.2094" stop-color="#FCBB45"/>
+													<stop offset="0.7394" stop-color="#8F39CE"/>
+													<stop offset="1" stop-color="#5B4FE9"/>
+												</linearGradient>
+											</defs>
+										</svg>
+									</a>
+								</li>
+								
+								<li class="col-auto facebook">
+									<a href="#">
+										<svg viewBox="0 0 24 24" fill="none">
+											<path class="path" d="M17.2224 13.5414L17.8464 9.50412H13.9488V6.88894C13.9488 5.78178 14.496 4.7128 16.2336 4.7128H18V1.27679C18 1.27679 16.3968 1 14.8608 1C11.6544 1 9.5616 2.92799 9.5616 6.43081V9.50412H6V13.5414H9.5616V23H13.9488V13.5414H17.2224Z"/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			<div id="footer-helper">
+				<div class="container">
+					<ul class="row lis-wrapper">	
+					
+						<li class="col">
+							<a href="#">
+								<div class="label person">
+									<span>Cẩm Vân</span>
+									<span>098789785</span>
+
+								</div>
+							</a>
+						</li>
+						<li class="col">
+							<a href="#">
+								<div class="label person">
+									<span>Hoàng Đạt</span>
+									<span>038789755</span>
+
+								</div>
+							</a>
+						</li>
+						<li class="col">
+							<a href="#">
+								<div class="label person">
+									<span>Hồng Nhung</span>
+									<span>098766666</span>
+
+								</div>
+							</a>
+						</li>
+						
+					</div>
+				</div>
+			</div>
+			
+		</footer>	
+		
+		<!--------------------------------->
+		
+		
+		<div id="sidebar-menu">
+			<ul>
+				<li>	
+					<a href="#">		
+						<div class="icon">			
+							<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#0f0" d="M13,42h22c3.866,0,7-3.134,7-7V13c0-3.866-3.134-7-7-7H13c-3.866,0-7,3.134-7,7v22	C6,38.866,9.134,42,13,42z"/><path fill="#fff" d="M35.45,31.041l-4.612-3.051c-0.563-0.341-1.267-0.347-1.836-0.017c0,0,0,0-1.978,1.153	c-0.265,0.154-0.52,0.183-0.726,0.145c-0.262-0.048-0.442-0.191-0.454-0.201c-1.087-0.797-2.357-1.852-3.711-3.205	c-1.353-1.353-2.408-2.623-3.205-3.711c-0.009-0.013-0.153-0.193-0.201-0.454c-0.037-0.206-0.009-0.46,0.145-0.726	c1.153-1.978,1.153-1.978,1.153-1.978c0.331-0.569,0.324-1.274-0.017-1.836l-3.051-4.612c-0.378-0.571-1.151-0.722-1.714-0.332	c0,0-1.445,0.989-1.922,1.325c-0.764,0.538-1.01,1.356-1.011,2.496c-0.002,1.604,1.38,6.629,7.201,12.45l0,0l0,0l0,0l0,0	c5.822,5.822,10.846,7.203,12.45,7.201c1.14-0.001,1.958-0.248,2.496-1.011c0.336-0.477,1.325-1.922,1.325-1.922	C36.172,32.192,36.022,31.419,35.45,31.041z"/></svg>					
+						</div>		
+					</a>
+				</li>
+				<li>	
+					<a href="#">		
+						<div class="icon">			
+							<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px">
+								<path fill="#2962ff" d="M15,36V6.827l-1.211-0.811C8.64,8.083,5,13.112,5,19v10c0,7.732,6.268,14,14,14h10	c4.722,0,8.883-2.348,11.417-5.931V36H15z"/>
+								<path fill="#eee" d="M29,5H19c-1.845,0-3.601,0.366-5.214,1.014C10.453,9.25,8,14.528,8,19	c0,6.771,0.936,10.735,3.712,14.607c0.216,0.301,0.357,0.653,0.376,1.022c0.043,0.835-0.129,2.365-1.634,3.742	c-0.162,0.148-0.059,0.419,0.16,0.428c0.942,0.041,2.843-0.014,4.797-0.877c0.557-0.246,1.191-0.203,1.729,0.083	C20.453,39.764,24.333,40,28,40c4.676,0,9.339-1.04,12.417-2.916C42.038,34.799,43,32.014,43,29V19C43,11.268,36.732,5,29,5z"/>
+								<path fill="#2962ff" d="M36.75,27C34.683,27,33,25.317,33,23.25s1.683-3.75,3.75-3.75s3.75,1.683,3.75,3.75	S38.817,27,36.75,27z M36.75,21c-1.24,0-2.25,1.01-2.25,2.25s1.01,2.25,2.25,2.25S39,24.49,39,23.25S37.99,21,36.75,21z"/>
+								<path fill="#2962ff" d="M31.5,27h-1c-0.276,0-0.5-0.224-0.5-0.5V18h1.5V27z"/>
+								<path fill="#2962ff" d="M27,19.75v0.519c-0.629-0.476-1.403-0.769-2.25-0.769c-2.067,0-3.75,1.683-3.75,3.75	S22.683,27,24.75,27c0.847,0,1.621-0.293,2.25-0.769V26.5c0,0.276,0.224,0.5,0.5,0.5h1v-7.25H27z M24.75,25.5	c-1.24,0-2.25-1.01-2.25-2.25S23.51,21,24.75,21S27,22.01,27,23.25S25.99,25.5,24.75,25.5z"/>
+								<path fill="#2962ff" d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"/>
+							</svg>						
+						</div>		
+					</a>
+				</li>
+				<li>	
+					<a href="#">		
+						<div class="icon">			
+							<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><linearGradient id="Ld6sqrtcxMyckEl6xeDdMa" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"/><path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"/></svg>				
+						</div>		
+					</a>
+				</li>
+				
+				
+				<li>	
+					<a href="#">	
+						<i class="fas fa-3x fa-caret-up" style="color: #7ca745;"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<!-- JS Declaration -->
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='../../assets/js/scripts.js'></script>		
+		<script src='../../assets/js/modules.js'></script>
+		
+		<script src='../../assets/js/product-category.js'></script>
+		
+		<script>
+			var jq = jQuery.noConflict();
+		</script>	
+		
+		
+		
+	</body>
+	
+</html>
+

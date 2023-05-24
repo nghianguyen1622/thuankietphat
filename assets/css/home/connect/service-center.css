@@ -1,0 +1,49 @@
+.img-service {
+    margin-bottom:40px;
+}
+
+
+.connect-content{
+	padding-top: 30px;
+}
+.table-info {
+}
+
+.table-info:last-child {
+	margin-right: 0;
+}
+
+
+.table-info th {
+	background: #f9f9f9;
+	padding:20px ;
+	width: 150px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.table-info tr {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.table-info tr:last-child {
+	border-bottom: none;
+}
+
+.table-info td {
+	padding-left: 30px;
+	color: #858585;
+}
+
+@media all and (max-width: 767px) {
+	.table-info {
+		width: 100%;
+	}
+	.table-info:last-child , .product-part{
+		padding-top: 20px;
+	}
+
+	.table-info tr:last-child {
+		border-bottom: 1px solid rgba(0,0,0,.1);
+	}
+}
